@@ -8,7 +8,7 @@ function Card({ name, mission_ids, src, year, launch_success, land_success, flig
 		<React.Fragment>
 			<CardWrapper  href={`${article_link}`} target="_blank">
 				<CardImageContainer>
-					<img src={src?src:placeholderImageSrc} width={150} height={150} />
+					<img src={src?src:placeholderImageSrc} width={150} height={150} alt=""/>
 				</CardImageContainer>
 				<CardContainer >
 					<h3 style={{ color: 'blue' }}>{`${name} #${flight_number}`}</h3>

@@ -3,10 +3,11 @@ import { useQuery } from '../../hooks/useQuery';
 import { getAllList, getFilteredList } from '../../hooks/useFilter';
 import { MainContainer, Item, ItemWrapper, ItemContainer, Row } from './content.styled';
 import Card from '../InfoCard/Card';
-import LazyPlaceholderCard from '../InfoCard/LazyPlaceholderCard';
+// import LazyPlaceholderCard from '../InfoCard/LazyPlaceholderCard';
 
 function Content(props) {
 	const query = useQuery();
+	const queryString = query.toString();
 	const [ list, setList ] = React.useState([]);
 
 	const getNoFilterData = async () => {
@@ -27,18 +28,18 @@ function Content(props) {
 				getFilterData(filters);
 			}
 		},
-		[ query.toString() ]
+		[ queryString ]
 	);
 
-	const LazyCard = (key) => (
-		<Item key={key} >
-			<ItemWrapper>
-				<ItemContainer>
-					<LazyPlaceholderCard />
-				</ItemContainer>
-			</ItemWrapper>
-		</Item>
-	);
+	// const LazyCard = (key) => (
+	// 	<Item key={key} >
+	// 		<ItemWrapper>
+	// 			<ItemContainer>
+	// 				<LazyPlaceholderCard />
+	// 			</ItemContainer>
+	// 		</ItemWrapper>
+	// 	</Item>
+	// );
 
 	const renderCards = (cards) => {
 		if(!cards){
