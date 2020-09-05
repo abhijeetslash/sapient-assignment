@@ -6,9 +6,9 @@ import { RenderApp } from './routes';
 import './index.css';
 
 ReactDOM.render(
-	<BrowserRouter>
-		<RenderApp />
-	</BrowserRouter>,
+		<BrowserRouter>
+			<RenderApp />
+		</BrowserRouter>,
 	document.getElementById('root')
 );
 
