@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.div`
-max-width: 1335px;
+
 `;
 export const Row = styled.div`
   display: flex;
@@ -11,9 +11,6 @@ export const Row = styled.div`
 
 export const Item = styled.div`
   flex-basis: 25%;
-
-      min-width: 320px;
-
   position: relative;
   padding: 10px;
   box-sizing: border-box;
@@ -23,7 +20,7 @@ export const Item = styled.div`
 @media (min-width: 701px) and (max-width: 1024px) {
 
     flex-basis: 50%;
-    min-width: 214px;
+    
 }
 
 @media(max-width: 700px) {
@@ -31,6 +28,20 @@ export const Item = styled.div`
     flex-basis: 100%;
   
 }
+
+// @media(min-width: 1400px) {
+  
+//   flex-basis: 25%;
+
+// }
+
+
+@media(max-width: 700px) {
+  
+  flex-basis: 100%;
+
+}
+
   
 	
   `;

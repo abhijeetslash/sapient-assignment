@@ -53,8 +53,8 @@ export const ContentWrapper = styled.div`
 		background: transparent;
 		justify-content: flex-start;
 	}
-			@media (min-width: 601px) and (max-width: 1024px) {
-				flex-basis: 55%;
+			@media (min-width: 701px) and (max-width: 1024px) {
+				flex-basis: 68%;
 				margin-top: 20px;
 				justify-content: flex-start;
 			}
