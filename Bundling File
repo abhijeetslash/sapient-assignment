@@ -1,0 +1,3 @@
+Steps to create the production build file:
+Should have react installed in your system.
+after cloning and installing the node modules run the command npm run build to generate the bundle file.
